@@ -1,0 +1,18 @@
+<h1>Delete Inventory Item</h1>
+<body>
+<p1>Are you sure you would like to delete this item?</p1> 
+
+<%= form_with model: @item, url: destroy_item_url, method: :destroy, local: true do | f | %>
+    <fieldset disabled='disabled'>
+        <%= f.label(:name, "Item Name:") %>
+        <%= f.text_field(:name) %>
+        <%= f.label(:quantity, "Quantity:") %>
+        <%= f.text_field(:quantity) %>
+        <%= f.label(:description, "Description:") %>
+        <%= f.text_field(:description) %>
+        <%= f.label(:price, "Price:") %>
+        <%= f.text_field(:price) %>
+    </fieldset>
+        <%= f.submit("Delete Item") %>
+<% end %>
+</body>

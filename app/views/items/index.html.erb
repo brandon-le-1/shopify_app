@@ -1,8 +1,23 @@
 <h1>Inventory</h1>
-<ul>
-    <% @items.each do |item| %>
-        <li>
-            <%= item.name %>
-        </li>
-    <% end %>
-</ul>
+
+<table>
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity in Stock</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    <tbody>
+        <% @items.each do |item| %>
+            <tr>
+                <td><%= item.name %></td>
+                <td><%= item.quantity %></td>
+                <td><%= item.description %></td>
+                <td><%= item.price %></td>
+                #fix
+                <td><%=link_to "Edit", edit_item_path(item) %></td>
+                <td><%=link_to "Delete", confirm_destroy_path(item) %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

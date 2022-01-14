@@ -16,7 +16,7 @@
                 <td><%= item.price %></td>
                 #fix
                 <td><%=link_to "Edit", edit_item_path(item) %></td>
-                <td><%=link_to "Delete", confirm_destroy_path(item) %></td>
+                <td><%=link_to "Delete", destroy_item_path(item) %></td>
             </tr>
         <% end %>
     </tbody>

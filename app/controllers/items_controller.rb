@@ -27,18 +27,29 @@ class ItemsController < ApplicationController
 
   def edit
     @item = Item.find(params[:id])
-    render :edit
   end
 
-  #help
+  # #help
+  # def update
+  #   @item = Item.find(params[:id])
+  #   if @item.update(params.require(:item).permit(:name, :quantity, :description, :price))
+  #     flash[:success] = "Success, #{@item.name} updated."
+  #     redirect_to items_url(@item)
+  #   else
+  #     flash[:error] = @item.errors.full_messages.to_sentence
+  #     render :edit
+  #   end
+  # end
+
   def update
     @item = Item.find(params[:id])
+    binding.pry
     if @item.update(params.require(:item).permit(:name, :quantity, :description, :price))
       flash[:success] = "Success, #{@item.name} updated."
-      redirect_to items_url(@item)
+      redirect_to items_path(@item)
     else
       flash[:error] = @item.errors.full_messages.to_sentence
-      render :edit
+      redirect_to edit_item_path(@item)
     end
   end
 
@@ -61,6 +72,5 @@ class ItemsController < ApplicationController
   def item_params
     params.permit(:name, :quantity, :description, :price)
   end
-
   
 end

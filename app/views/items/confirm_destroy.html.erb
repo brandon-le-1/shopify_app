@@ -1,0 +1,17 @@
+<h1>Delete Inventory Item</h1>
+
+<p1>Are you sure you would like to delete this item?</p1> 
+
+<p>Name</p> 
+<%= @item.name %>
+<p> Quantity </p>
+<%= @item.quantity %>
+<p> Description </p>
+<%= @item.description %>
+<p>Price</p>
+<%= @item.price %>
+
+
+<%= form_with url: "/items/#{@item.id}", method: :delete do |form| %>
+    <%= form.button "Delete", data: { confirm: "Are you sure?" } %>
+<% end %>

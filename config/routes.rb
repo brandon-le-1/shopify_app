@@ -12,6 +12,5 @@ Rails.application.routes.draw do
   patch 'items/:id', to: 'items#update', as: 'update_item'
   get 'items/:id/delete', to: 'items#confirm_destroy', as: 'confirm_destroy'
   delete 'items/:id', to: 'items#destroy', as: 'destroy_item'
-
-  #testing export
+  get 'items/generate_csv', to: 'items#generate_csv', defaults: {format: :csv}
 end

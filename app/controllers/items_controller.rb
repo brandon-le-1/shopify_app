@@ -7,6 +7,7 @@ class ItemsController < ApplicationController
   end
 
   def new
+    @item = Item.new 
   end
 
   def show
@@ -32,9 +33,9 @@ class ItemsController < ApplicationController
 
   def update
     @item = Item.find(params[:id])
-    if @item.update(params.require(:item).permit(:name, :quantity, :description, :price))
+    if @item.update(item_params)
       flash[:success] = "Success, #{@item.name} updated."
-      redirect_to items_path(@item)
+      redirect_to '/items'
     else
       flash[:error] = @item.errors.full_messages.to_sentence
       redirect_to edit_item_path(@item)
@@ -57,19 +58,17 @@ class ItemsController < ApplicationController
   end
 
   #testing export
-  def Exportdef index
-    @item = Item.all
-
+  def generate_csv
+    @items = Item.all
     respond_to do |format|
-      format.html
-      format.csv { send_data @item.to_csv, filename: "item-#{Date.today}.csv" }
+      format.csv { send_data @items.to_csv, filename: "item-#{Date.today}.csv" }
     end
   end
 
   private
 
   def item_params
-    params.permit(:name, :quantity, :description, :price)
+    params.require(:item).permit(:name, :quantity, :description, :price)
   end
   
 end

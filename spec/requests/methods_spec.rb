@@ -18,7 +18,7 @@ RSpec.describe "Items", type: :feature do
         expect(page).to have_content(item_2.price)     
     end
 
-    it "add an item to the inventory" do
+    it "adds an item to the inventory" do
         item = Item.create(name: 'Banana', quantity: 2, description: 'Yellow fruit that must be peeled before eaten.', price: 2.15)
 
         expect(Item.where(name: 'Banana', quantity: 2, description: 'Yellow fruit that must be peeled before eaten.', price: 2.15 )).to exist

@@ -28,4 +28,10 @@ This inventory application is a Ruby on Rails web application that allows a logi
 
 ###### What Can I do with this Inventory Tracking App?
 * Create inventory items
+* Edit existing items
+* Delete existing items
+* View a list of inventory items
+* Export list of inventory items to a CSV
+
+
 

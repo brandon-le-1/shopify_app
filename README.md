@@ -33,5 +33,11 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * View a list of inventory items
 * Export list of inventory items to a CSV
 
+####Stack
+* Ruby on Rails
+* HTML
+* RSpec
+* PostgreSQL
+
 
 

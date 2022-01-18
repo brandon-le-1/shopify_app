@@ -23,5 +23,9 @@ Things you may want to cover:
 
 * ...
 
-# Inventory Tacking App
-This inventory tracking web application 
+# Inventory Tracking App
+This inventory application is a Ruby on Rails web application that allows a logistics company to keep track of inventory. 
+
+###### What Can I do with this Inventory Tracking App?
+* Create inventory items
+

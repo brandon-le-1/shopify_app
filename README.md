@@ -26,7 +26,7 @@ Things you may want to cover:
 # Inventory Tracking App
 This inventory application is a Ruby on Rails web application that allows a logistics company to keep track of inventory. 
 
-###### What Can I do with this Inventory Tracking App?
+#### What Can I do with this Inventory Tracking App?
 * Create inventory items
 * Edit existing items
 * Delete existing items

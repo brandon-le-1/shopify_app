@@ -54,5 +54,9 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * Start a devlopment server with the command `rails server` or `rails s`
 * You should now be able to view/use the app at [http://localhost:3000](http://localhost:3000)
 
+# Test Suite
+* Run the test suite with `bundle exec rspec`
+* All tests should be passing with a % test coverage
+
 
 

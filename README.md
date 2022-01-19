@@ -51,6 +51,8 @@ This inventory application is a Ruby on Rails web application that allows a logi
      * `rails db:create`
      * `rails db:migrate`
      * `rails db:seed`
+* Start a devlopment server with the command `rails server` or `rails s`
+* You should now be able to view/use the app at [http://localhost:3000](url)
 
 
 

@@ -11,6 +11,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
 #### Stack
 * Ruby on Rails
 * HTML
+* CSS
 * RSpec
 * PostgreSQL
 

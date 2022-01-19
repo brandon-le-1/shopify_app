@@ -34,8 +34,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * `cd` in your local repo version and run the following commands:
    * To install the gems:
      * `bundle` (you may have to `bundle update` and then try again if this command fails)   
-   * To setup the database:
-     * Note: If you do not have a username and/or password for your PostgreSQL database, you may remove   
+   * To setup the database:  
      * `rails db:create`
      * `rails db:migrate`
      * `rails db:seed`

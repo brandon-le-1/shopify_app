@@ -19,7 +19,7 @@ RSpec.describe "Items", type: :request do
 
   describe "GET csv" do
     it "returns http success" do
-      get "/items/generate_csv"
+      get "/generate_csv"
 
       expect(response).to have_http_status(:success)
     end

@@ -2,7 +2,7 @@ class Item < ApplicationRecord
     validates :name, presence: true
     validates :quantity, presence: true
     validates :price, presence: true
-    validates :description, length: { maximum: 150}
+    validates :description, length: { maximum: 150 }
 
     def self.to_csv
         column_names = %w(Name, Quantity, Description, Price)

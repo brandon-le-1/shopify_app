@@ -1,4 +1,4 @@
-<h1>Edit Inventory Item</h1>
+<h1>Edit <%= @item.name %> </h1>
 <%= form_with model: @item, url: update_item_path(@item), method: :patch do | f | %>
     <%= f.label(:name, "Item Name:") %>
     <%= f.text_field(:name) %>

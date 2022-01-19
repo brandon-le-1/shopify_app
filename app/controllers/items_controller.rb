@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @items = Item.all
+    @item = Item.find(params[:id])
   end
 
   def create
@@ -19,7 +19,6 @@ class ItemsController < ApplicationController
     
     if @item.save
       flash[:success] = "Success, #{@item.name} added to inventory."
-      #clears form when successful
       redirect_to items_new_path
     else
       flash[:error] = @item.errors.full_messages.to_sentence
@@ -42,10 +41,6 @@ class ItemsController < ApplicationController
     end
   end
 
-  def confirm_destroy
-    @item = Item.find(params[:id])
-  end
-
   def destroy
     @item = Item.find(params[:id])
     if @item.destroy
@@ -57,7 +52,6 @@ class ItemsController < ApplicationController
     end
   end
 
-  #testing export
   def generate_csv
     @items = Item.all
     respond_to do |format|

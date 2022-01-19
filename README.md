@@ -14,6 +14,10 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * RSpec
 * PostgreSQL
 
+#### Database Schema
+
+
+
 # Local Setup
 * Versions
   * Rails 7.0.1

@@ -26,12 +26,12 @@ Things you may want to cover:
 # Inventory Tracking App
 This inventory application is a Ruby on Rails web application that allows a logistics company to keep track of inventory. 
 
-#### What Can I do with this Inventory Tracking App?
+#### What Can I Do With This Inventory Tracking App?
 * Create inventory items
 * Edit existing items
 * Delete existing items
-* View a list of inventory items
-* Export list of inventory items to a CSV
+* View a list of all existing inventory items
+* Export list of all existing inventory items to a CSV
 
 #### Stack
 * Ruby on Rails
@@ -44,7 +44,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
   * Rails 7.0.1
   * Ruby 3.0.3
 * Fork and clone the repository
-* `cd` in your local repo version and run the following commands
+* `cd` in your local repo version and run the following commands:
    * To install the gems:
      * `bundle` (you may have to `bundle update` and then try again if this command fails)   
    * To setup the database:

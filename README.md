@@ -38,6 +38,9 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * All tests should be passing with ~95% test coverage
 
 # Future Iterations
+* Add more testing - my feature tests only cover happy paths. It would be beneficial to test sad paths as well. I would also like to test the CSV generation functionality better.
+* Improve styling - my styling with the time constraints is very basic. If I had more time, I would improve my styling greatly and look into implementing something like bootstrap.
+
 
 
 

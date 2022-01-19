@@ -15,7 +15,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * PostgreSQL
 
 #### Database Schema
-
+![Screenshot](/screenshots/schema_github.jpg)
 
 
 # Local Setup

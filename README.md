@@ -31,7 +31,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
 
 # Test Suite
 * Run the test suite with `bundle exec rspec`
-* All tests should be passing with a 94.82% test coverage
+* All tests should be passing with a 91.44% test coverage
 
 
 

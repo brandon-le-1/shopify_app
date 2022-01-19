@@ -41,6 +41,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
      * `rails db:seed`
 * Start a development server with the command `rails server` or `rails s`
 * You should now be able to view/use the app at [http://localhost:3000](http://localhost:3000)
+  * If you run into issues spinning up the app locally, it may help to make sure your Node is up to date as well 
 
 # Test Suite
 * Run the test suite with `bundle exec rspec`

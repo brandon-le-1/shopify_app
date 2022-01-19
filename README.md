@@ -14,6 +14,14 @@ This inventory application is a Ruby on Rails web application that allows a logi
 * RSpec
 * PostgreSQL
 
+#### Gems Added 
+* 'rspec-rails' was used for testing [https://github.com/rspec/rspec-rails](https://github.com/rspec/rspec-rails)
+* 'pry' was used for debugging [https://github.com/pry/pry](https://github.com/pry/pry)
+* 'simplecov' was used to check test coverage [https://github.com/simplecov-ruby/simplecov](https://github.com/simplecov-ruby/simplecov)
+* 'shoulda-matchers' was used in addition to rspec for testing [https://github.com/thoughtbot/shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
+* 'figaro' was used to add environmental variables in the database .yml file [https://github.com/laserlemon/figaro](https://github.com/laserlemon/figaro)
+* 'pg' was so I could utilize PostgreSQL as my database [https://github.com/ged/ruby-pg](https://github.com/ged/ruby-pg)
+
 #### Database Schema
 ![Screenshot](/screenshots/schema_github.jpg)
 
@@ -27,6 +35,7 @@ This inventory application is a Ruby on Rails web application that allows a logi
    * To install the gems:
      * `bundle` (you may have to `bundle update` and then try again if this command fails)   
    * To setup the database:
+     * Note: If you do not have a username and/or password for your PostgreSQL database, you may remove   
      * `rails db:create`
      * `rails db:migrate`
      * `rails db:seed`

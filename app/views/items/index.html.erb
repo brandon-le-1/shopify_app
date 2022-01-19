@@ -1,6 +1,6 @@
 <h1>Inventory</h1>
 
-<table>
+<table class = 'items'>
         <tr>
             <th>Item Name</th>
             <th>Quantity in Stock</th>
@@ -15,11 +15,11 @@
                 <td><%= item.description %></td>
                 <td><%= item.price %></td>
                 <td><%=link_to "Edit", edit_item_path(item) %></td>
-                <td><%=link_to "Delete", confirm_destroy_path(item) %></td>
+                <td><%=link_to "Delete", show_item_path(item) %></td>
             </tr>
         <% end %>
     </tbody>
 </table>
 <br>
 
-<%= link_to "Export Inventory to CSV", "/items/generate_csv" %>
+<%= link_to "Export Inventory to CSV", "/generate_csv" %>
